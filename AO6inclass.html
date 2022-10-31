@@ -1,0 +1,34 @@
+<!-- Lainie Shoop, October 31st 2022
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <title>Javascript</title>
+     <script>
+       Function glue()
+       {
+    	document.querySelector("#full").value =
+	    document.querySelector("#first").value + " " +
+            document.querySelector("#last").value;
+       }
+
+       function sayHi()
+       {
+        document.querySelector("#changeText").innerHTML =
+         "Hi " + document.querySelector("#first").value;
+       }
+
+
+     </script>
+   </head>
+   <body>
+     <form name=inclass>
+      First: <input type=text id="first" onchange="sayHi();"><br>
+      Last: <input type=text id="last" onchange="glue();"><br>
+      Full: <input type=text id="full"><br>
+      <input type=reset value="clear entries"><br><br>
+      
+      <div id=changeText>
+New stuff here.
+      </div>
+
+     </form>
