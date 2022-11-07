@@ -1,0 +1,54 @@
+<!-- Lainie Shoop
+    November 3rd 2022
+    Javascript -->
+
+<!DOCTYPE html>
+<html lang="en"> 
+   <head>
+      <title>Javascript</title>
+      <h2>Welcome to the page</h2>
+      <script>
+	function glue()
+       {
+    	document.querySelector("#City").value =
+	    document.querySelector("#Mascot").value + " " +
+            document.querySelector("#Favorite Team").value;
+       }
+
+       function sayHi()
+       {
+        document.querySelector("#changeText").innerHTML =
+         "Hi " + document.querySelector("#first").value;
+       }
+        var numClicks;
+        numClicks = 1;
+        function countClicks()
+        {
+          numClicks++;
+          document.querySelector("#countOut").innerHTML="You have clicked "+numClicks+" times";
+        }
+
+      </script>
+    </head>
+   <body>
+    <table>
+    <tr>
+     <td>City:</td><td><input type=text name="City:">
+    </tr>
+    <tr>
+     <td>Mascot:</td><td><input type=text name="Mascot:">
+    </tr>
+    <tr>
+     <td>Favorite Team:</td><td><input type=text name="Favorite Team:">
+    </tr>
+    </table>
+<br>
+<br>
+<br>
+    <INPUT TYPE=CHECKBOX NAME="Summer" VALUE="Summer"> Summer<br>
+    <INPUT TYPE=CHECKBOX NAME="Spring" VALUE="Spring"> Spring<br>
+    <INPUT TYPE=CHECKBOX NAME="Fall" VALUE="Fall"> Fall<br>
+    <INPUT TYPE=CHECKBOX NAME="Winter" VALUE="Winter"> Winter<br>
+
+   </head>
+  </body>
