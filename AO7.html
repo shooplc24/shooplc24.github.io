@@ -1,86 +1,9 @@
-<!-- Lainie Shoop
-     AO7 Javascript-->
-<!DOCTYPE html>
-<html lang="en"
-  <head>
-   <script>
- function add()
- { 
-  document.querySelector("#number").value = parseFloat(document.querySelector("#first").value + parseFloat(document.querySelector("#second").value);
- }
+Choose a background color
 
- function sub()
- {
-  document.querySelector("#number").value = parseFloat(document.querySelector("#first").value - parseFloat(document.querySelector("#second").value);
- }
+Juniata Calculator
+= 
 
- function div()
- {
-  document.querySelector("#number").value = parseFloat(document.querySelector("#first").value / parseFloat(document.querySelector("#second").value);
- }
+Summation! You decide where it starts and where it ends
+Where would you like to start the summation?   
+Where would you like to end the summation?   
 
- function mult()
- {
-  document.querySelector("#number").value = parseFloat(document.querySelector("#first").value * parseFloat(document.querySelector("#second").value);
- }
-  </script>
-  <script>
- function makeRed()
- {
-document.querySelector('body').style.backgroundColor="red";
- }
-
- function makeGreen()
- {
-document.querySelector('body').style.backgroundColor="Green";
- }
-
- function makeBlue()
- {
-document.querySelector('body').style.backgroundColor="Green";
- }
-
- function makeWhite()
- {
-document.querySelector('body').style.backgroundColor="Green";
- }
-</script>
- </head>
-  <body>
-    <form>
-      <h2>Choose a background color</h2>
-<input type="button" value="Make it Red!" onclick="makeRed();"
-<input type="button" value="Make it Green!" onclick="makeGreen();"
-<input type="button" value="Make it Blue!" onclick="makeBlue();"
-<input type="button" value="Back to White" onclick="makeWhite();"
-<br>
-<br>
-    <h2>Juniata Calculator</h2>
-<input type="text" id="first">
-<input type="submit" value="+" onclick="add();">
-<input type="submit" value="-" onclick="sub();">
-<input type="submit" value="/" onclick="div();">
-<input type="submit" value="*" onclick="mult();">
-<input type="text" id="second">
-=
-<input type="text" id="number">
-<br>
-<br>
-    <h2>Summation! You decide where it starts and where it ends</h2>
-Where would you like to start the summation?
-<input type="text name="answer" value=" " size=18>
-<br>
-Where would you like to end the summation?
-<input type="text" name="answer" value=" " size=18>
-<br>
-<input type="submit" value="Lets Go!">
-<br>
-<input type="reset" value="Clear Page Entries">
-</form>
-  </body>
-    </html>
-
-
-
-  
-     
