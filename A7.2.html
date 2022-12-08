@@ -1,0 +1,129 @@
+<!-- Lainie Shoop, AO7 Javascript-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 7</title>
+
+<script>
+
+var bgToggle=true;
+        function makeRed()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="red";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+
+var bgToggle=true;
+        function makeGreen()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="green";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+
+var bgToggle=true;
+        function makeBlue()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="blue";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+
+var bgToggle=true;
+        function makeWhite()
+        {
+           if (bgToggle) {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=false;
+           } else {
+             document.querySelector('body').style.backgroundColor="white";
+             bgToggle=true;
+           }
+        }
+
+</script>
+
+<script>
+function add()
+{
+ document.querySelector("#number").value = parseFloat(document.querySelector("#first").value) + parseFloat(document.querySelector("#second").value);
+}
+
+function sub()
+{
+ document.querySelector("#number").value = parseFloat(document.querySelector("#first").value) - parseFloat(document.querySelector("#second").value);
+}
+
+function mult()
+{
+ document.querySelector("#number").value = parseFloat(document.querySelector("#first").value) * parseFloat(document.querySelector("#second").value);
+}
+
+function div()
+{
+ document.querySelector("#number").value = parseFloat(document.querySelector("#first").value) / parseFloat(document.querySelector("#second").value);
+}
+</script>
+
+<script>
+function doSum()
+{
+var sum=0;
+var start = parseInt( document.querySelector("#A").value );
+var end = parseInt( document.querySelector("#B").value );
+for (var i=start; i<=end; i++) {
+sum += i;
+ }
+
+document.querySelector("#sumHere").innerHTML = "Your sum is: "+sum;
+}
+</script>
+</head>
+
+<body>
+<h1>Choose a background color</h1>
+<form>
+<input type="button" value="Make it Red" onclick="makeRed();">
+<input type="button" value="Make it Green" onclick="makeGreen();">
+<input type="button" value="Make it Blue" onclick="makeBlue();">
+<input type="button" value="Back to White" onclick="makeWhite();">
+
+
+<h1>Juniata Calculator<h1>
+<input type="text" id="first">
+<input type="button" value="+" onclick="add();">
+<input type="button" value="-" onclick="sub();">
+<input type="button" value="*" onclick="mult();">
+<input type="button" value="/" onclick="div();">
+<input type="text" id="second">
+=
+<input type="text" id="number">
+
+
+<h1>Summation! You decide where it starts and where it ends</h1>
+Where would you like to start the summation?
+<input type="text" id="A"><br>
+Where would you like to end the summation?
+<input type="text" id="B"><br>
+
+<input type="button" value="Here we go" onclick="doSum();">
+<input type="reset" value="Clear Page Entries">
+<div id="sumHere">
+Your sum is:
+</div>
+</form>
+</body>
+</html>
